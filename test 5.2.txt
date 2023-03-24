@@ -1,0 +1,46 @@
+ #include<stdio.h>
+int main()
+{
+int sub1,sub2,sub3,sub4;
+float total,agg;
+char grade;
+printf("Enter the marks of 4 subjects: ");
+scanf("%d%d%d%d",&sub1,&sub2,&sub3,&sub4);
+total=sub1+sub2+sub3+sub4;
+agg=total/4;
+if(agg>=75)
+grade='D';
+else if(agg>=60 && agg<75)
+grade='A';
+else if(agg>=50 && agg<60)
+grade='B';
+else if(agg>=40 && agg<50)
+grade='C';
+else
+grade='F';
+printf("Total marks= %.2f\n",total);
+printf("Aggregate= %.2f\n",agg);
+printf("Grade= %c",grade);
+return 0;
+}
+
+
+output:
+Test cases:
+a) 18, 76,93,65 :          Enter the marks of 4 subjects: 18 76 93 65
+                           Total marks= 252.00
+                           Aggregate= 63.00
+b) 73,78,79,75  :          Enter the marks of 4 subjects: 73 78 79 75
+                           Total marks= 305.00
+                           Aggregate= 76.25
+c) 98,106,120,95 :         Enter the marks of 4 subjects: 98 106 120 95
+                           Total marks= 419.00
+                           Aggregate= 104.75
+d) 96,73, -85,95 :         Enter the marks of 4 subjects: 96 73  -85 95 
+                           Total marks= 179.00
+                           Aggregate= 44.75
+e) 78,59.8,76,79 :         Enter the marks of 4 subjects: 78 59.8 76 79
+                           Total marks= 137.00
+                           Aggregate= 34.25
+
+
